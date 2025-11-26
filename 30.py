@@ -12,11 +12,10 @@ fieldnames = ["Name", "Age", "Country"]
 
 with open(filename, "w", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
-    
-    writer.writeheader()  
+
+    writer.writeheader()
     writer.writerows(data)
 print("Data written to", filename)
-
 
 
 with open("output.csv", "r", newline="") as f1:
@@ -27,3 +26,4 @@ with open("output.csv", "r", newline="") as f1:
         print(row)
         count += 1
 
+print(count)

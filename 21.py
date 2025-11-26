@@ -8,8 +8,7 @@ if str2 in str1:
     resultString = new_str + "ly"
 else:
     new_str = str1[:-1]
-    resultString = str1[:-1] + str2
+    resultString = new_str + str2
 
 
-
-print(resultString)        
+print(resultString)
